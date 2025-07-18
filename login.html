@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LangLink – Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 LangLink – Vocabulary Builder</h1>
+    <form id="userForm">
+      <label for="name">Enter Your Name:</label>
+      <input type="text" id="name" placeholder="e.g., Sahitha" required />
+
+      <label for="language">Choose Language:</label>
+      <select id="language" required>
+        <option value="">-- Select --</option>
+        <option value="tamil">Tamil to English</option>
+        <option value="telugu">Telugu to English</option>
+      </select>
+
+      <button type="submit">Continue</button>
+    </form>
+
+    <div id="output" class="hidden">
+      <h2>Welcome, <span id="username"></span>!</h2>
+      <p>Your selected language is: <strong><span id="userlang"></span></strong></p>
+    </div>
+
+    <button id="startBtn" class="hidden">Start Learning →</button>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
